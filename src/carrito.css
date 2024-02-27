@@ -1,0 +1,106 @@
+body{
+    font-family: sans-serif;
+    margin: 0; /*Esto para que el borde del header no tenga margen, para se vea mejor*/
+    background-color: blanchedalmond;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    display: flex;              
+    min-height: 70px;                   /*Le damos un tamaño(altura)*/                 
+    background-color: burlywood;   /*Ponemos fondo al header*/
+    justify-content: space-around;  /*Esto para que se queden entre una distancia*/
+    align-items: center;
+    padding: 5px; /*Esto es para dar espacio entre elementos*/
+    position: fixed; /*Esto es para que cuando bajemos a través de la pagina, el header se quede fijo*/
+    top: 0;
+    width: 100%; /*Y esto lo pongo para que no se me desforme el header, y ocupe todo el ancho*/
+
+}
+
+main{
+    margin-top: 0px;
+    margin-left: 450px;
+}
+
+main form{
+    display: block;
+    margin-top: 100px;
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+.Final {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #333; 
+    color: white;
+    text-align: center;
+    padding: 10px 0; 
+}
+
+
+.BotonesIdiomas {
+    display: none;
+    position: absolute;
+    
+  }
+  
+  .BotonesIdiomas a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .BotonesIdiomas a:hover {
+    background-color: #ddd;
+  }
+
+.navegacion a{ /*Aqui estamos haciendo referencia a la seccion de nav todos los a(referencias) que tenga*/
+    font-weight: 600;
+    padding-right: 10px;  /*Esto es para dejar cierto espacio entre cada elemento*/
+
+}
+
+.navegacion a:hover{
+    text-decoration: underline;
+}
+
+.Carrito{
+    margin: 0;
+}
+
+
+
+
+/*Esto lo hago para modificar la pagina si se utilizan dispositivos de menor o igual tamaño a 850 px, como por ejemplo un móvil)*/
+@media (max-width: 850px){  
+    header{
+        display: flex;
+        flex-direction: column;
+        padding-top: 5px;
+    }
+    main{
+        margin-top: 250px;
+        margin-left: auto;
+    }
+    .Video{
+        display: none;  /*Esto lo hago para si se utiliza la pagina web desde el movil, que no se vea el video, ya que no se verá con una buena resolución*/
+    }
+}

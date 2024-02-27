@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Completando pago</title> <!--EL título que aparecera en la ventana de la página web-->
+    <link rel="shortcut icon" href="Imagenes/lc.jpg"image/x-icon"> <!--Esto es para poner una pequeña imagen a la izquierda del titulo-->
+    <link rel="stylesheet" href="carrito.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="Imagenes/lc.jpg" alt="Logo de la marca de ropa">
+            <h2 class="NombreMarca">CAMISETASMARÍN</h2>
+        </a>
+        <div class="navegacion">
+            <a href="index.html" id="Inicio">Inicio</a>  <!--El # te lleva al principio de la pagina(arriba del todo)-->
+            <a href="tallas.html" id="Talla">Tallas</a>
+            <a href="sobrenosotros.html" id="SobreNosotros">Sobre nosotros</a>
+            <a href="ayuda.html" id="Ayuda">Ayuda</a>
+        </div> 
+        <div class="Carrito">
+            <a href="#">
+                <img src="Imagenes/carrito.png" alt="carrito">
+            </a>
+        </div>
+
+        <div class="contenedorDesplegable" onmouseover="mostrarOpciones()" onmouseout="ocultarOpciones()">
+            <button class="botonDesplegable">Seleccionar Idioma</button>
+            <div class="BotonesIdiomas">
+                <button class="BotonES" onclick="actualizarIdioma('es',4)">Español</button>
+                <button id="BotonIN" onclick="actualizarIdioma('in',4)">Inglés</button>
+            </div>
+        </div>
+        
+        <h2 class="Lema">TRUST YOURSELF</h2> 
+    </header>
+
+    <main>
+        <form> <!--Aqui he creado el formulario, el required significa que el campo debe estar relleno antes de darle a pagar-->
+            <h2>Completar pago</h2>
+            <label for="nombre" id="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="correo" id="correo">Correo electrónico:</label><br>
+            <input type="email" id="correo" name="correo" required><br><br>  <!--Con lo de type, en este caso email, obligo a que se debe poner un nombre junto a una @, si no se pone @, el campo indicará que se debe poner-->
+
+            <label for="telefono" id="telefono">Número de teléfono:</label><br> <!--En este caso, el type tel, va a obligar a que se debe rellenar esa casilla con números-->
+            <input type="tel" id="telefono" name="telefono" required><br><br>
+
+            <label for="metodo_pago" id="metodo_pago">Método de pago:</label><br>
+            <select id="metodo_pago" name="metodo_pago" required>
+            <option value="tarjeta_credito" id="tarj_cred">Tarjeta de crédito</option>
+            <option value="apple_pay">Apple Pay</option>
+            </select><br><br>
+
+            <input type="submit" value="Pagar" id="Pagar">
+        </form>
+    </main>
+
+    <footer class="Final">
+        Carlos Marín Tutau
+        Programación de Aplicaciones Telemáticas
+        ICAI
+    </footer>
+
+    <script src="javascript.js"></script>
+    
+</body>
+</html>

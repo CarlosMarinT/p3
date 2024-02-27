@@ -1,0 +1,144 @@
+body{
+    font-family: sans-serif;
+    margin: 0; /*Esto para que el borde del header no tenga margen, para se vea mejor*/
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    display: flex;              
+    min-height: 70px;                   /*Le damos un tamaño(altura)*/                 
+    background-color: burlywood;   /*Ponemos fondo al header*/
+    justify-content: space-around;  /*Esto para que se queden entre una distancia*/
+    align-items: center;
+    padding: 5px; /*Esto es para dar espacio entre elementos*/
+    position: fixed; /*Esto es para que cuando bajemos a través de la pagina, el header se quede fijo*/
+    top: 0;
+    width: 100%; /*Y esto lo pongo para que no se me desforme el header, y ocupe todo el ancho*/
+
+}
+
+main{
+    margin-top: 0px;
+}
+#SeleccionarIdioma{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.BotonesIdiomas{
+    text-align: center;
+    margin-bottom: auto;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navegacion a{ /*Aqui estamos haciendo referencia a la seccion de nav todos los a(referencias) que tenga*/
+    font-weight: 600;
+    padding-right: 10px;  /*Esto es para dejar cierto espacio entre cada elemento*/
+
+}
+
+.navegacion a:hover{
+    text-decoration: underline;
+}
+
+.Carrito{
+    margin: 0;
+}
+
+
+.Camisetas{
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-top: 100px;
+    padding-bottom: 0px;
+    vertical-align: middle;
+    text-align: center;
+
+}
+
+.Camisetas p{
+    margin-top: 10px;
+    text-align: center;
+    
+}
+
+
+.Camisetas img{
+    margin: 0;
+    width: 210px;
+}
+
+
+.Final{
+    text-align:  center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #333; 
+    color: white;
+    text-align: center;
+    padding: 10px 0;    
+    margin-top: 30px;
+    text-align: center;
+}
+
+.Video{
+    width: 100%;
+    margin-top: 80px;
+    min-height: 300px;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+
+
+
+.BotonesIdiomas {
+    display: none;
+    position: absolute;
+    
+  }
+  
+  .BotonesIdiomas a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .BotonesIdiomas a:hover {
+    background-color: #ddd;
+  }
+  
+
+
+/*Esto lo hago para modificar la pagina si se utilizan dispositivos de menor o igual tamaño a 850 px, como por ejemplo un móvil)*/
+@media (max-width: 850px){  
+    header{
+        display: flex;
+        flex-direction: column;
+        padding-top: 5px;
+    }
+    body{
+        margin-top: 170px; /*Esto es para cuando estemos en version movil, como el header se va a hacer más grande, para que el margen con la parte superior sea de 170 px para que no se sobreponga el header con este*/
+    }
+    .Video{
+        display: none;  /*Esto lo hago para si se utiliza la pagina web desde el movil, que no se vea el video, ya que no se verá con una buena resolución*/
+    }
+}

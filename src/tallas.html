@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de tallas</title> <!--EL título que aparecera en la ventana de la página web-->
+    <link rel="shortcut icon" href="Imagenes/lc.jpg"image/x-icon"> <!--Esto es para poner una pequeña imagen a la izquierda del titulo-->
+    <link rel="stylesheet" href="estilostallas.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="Imagenes/lc.jpg" alt="Logo de la marca de ropa">
+            <h2 class="NombreMarca">CAMISETASMARÍN</h2>
+        </a>
+        <div class="navegacion">
+            <a href="index.html">Inicio</a>  <!--El # te lleva al principio de la pagina(arriba del todo)-->
+            <a href="#">Tallas</a>
+            <a href="sobrenosotros.html">Sobre nosotros</a>
+            <a href="ayuda.html">Ayuda</a>
+        </div> 
+        <div class="Carrito">
+            <a href="carrito.html">
+                <img src="Imagenes/carrito.png" alt="carrito">
+            </a>
+        </div>
+        
+        <div class="contenedorDesplegable" onmouseover="mostrarOpciones()" onmouseout="ocultarOpciones()">
+            <button class="botonDesplegable">Seleccionar Idioma</button>
+            <div class="BotonesIdiomas">
+                <button class="BotonES" onclick="actualizarIdioma('es',1)">Español</button>
+                <button id="BotonIN" onclick="actualizarIdioma('in',1)">Inglés</button>
+            </div>
+        </div>
+
+        <h2 class="Lema">TRUST YOURSELF</h2> 
+    </header>
+
+    <main>
+        <div>
+        <table>
+            <thead>
+                <tr id="PrimeraFila">
+                    <th>Talla</th>
+                    <th>Medida</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>XS</td>
+                    <td>Hombro : 39cm | Ancho : 52cm | Largo : 68cm</td>
+                </tr>
+                <tr>
+                    <td>S</td>
+                    <td>Hombro : 41cm | Ancho : 54cm | Largo : 70cm</td>
+                </tr>
+                <tr>
+                    <td>M</td>
+                    <td>Hombro : 43cm | Ancho : 56cm | Largo : 72cm</td>
+                </tr>
+                <tr>
+                    <td>L</td>
+                    <td>Hombro : 44cm | Ancho : 62cm | Largo : 74cm</td>
+                </tr>
+                <tr>
+                    <td>XL</td>
+                    <td>Hombro : 45cm | Ancho : 62cm | Largo : 76cm</td>
+                </tr>
+                <tr>
+                    <td>XXL</td>
+                    <td>Hombro : 47cm | Ancho : 64cm | Largo : 78cm</td>
+                </tr>
+
+            </tbody>
+        </table>                  
+      </div>
+
+      
+
+      <img src="Imagenes/tallas.gif" alt="Gif">
+
+      <footer class="Final">
+        Carlos Marín Tutau
+        Programación de Aplicaciones Telemáticas
+        ICAI
+      </footer>
+      <script src="javascript.js"></script>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CamisetasMarin</title>
+    <link rel="shortcut icon" href="Imagenes/lc.jpg"> <!--Esto es para poner una pequeña imagen a la izquierda del titulo-->
+    <link rel="stylesheet" href="estilos.css"> <!--Aqui hacemos referencia a el css para darle estilo-->
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="Imagenes/lc.jpg" alt="Logo de la marca de ropa">
+            <h2 class="NombreMarca">CAMISETASMARÍN</h2>
+        </a>
+        <div class="navegacion">
+            <a href="#" id="Inicio">Inicio</a>  <!--El # te lleva al principio de la pagina(arriba del todo)-->
+            <a href="tallas.html" id="Talla">Tallas</a>
+            <a href="sobrenosotros.html" id="SobreNosotros">Sobre nosotros</a>
+            <a href="ayuda.html" id="Ayuda">Ayuda</a>
+        </div> 
+        <div class="Carrito">
+            <a href="carrito.html">
+                <img src="Imagenes/carrito.png" alt="carrito">
+            </a>
+        </div>
+
+        <div class="contenedorDesplegable" onmouseover="mostrarOpciones()" onmouseout="ocultarOpciones()">
+            <button class="botonDesplegable">Seleccionar Idioma</button>
+            <div class="BotonesIdiomas">
+                <button class="BotonES" onclick="actualizarIdioma('es',1)">Español</button>
+                <button id="BotonIN" onclick="actualizarIdioma('in',1)">Inglés</button>
+            </div>
+        </div>
+        
+        
+        <h2 class="Lema">TRUST YOURSELF</h2> 
+    </header>
+
+    <main>
+        
+        
+        
+        
+        
+
+        <div class="Camisetas" id="C1">
+            <img src="Imagenes/c1.jpg" alt="C1">
+            
+            <p id="Precio1">Precio : 30€</p>
+            
+            <br>
+            <form>
+                <button class="botones">Añadir al carrito</button>
+                <div class="Talla">
+                    <input type="checkbox" name="talla" value="S">
+                    <label class="tallaS">XS</label>
+                    <input type="checkbox" name="talla" value="M">
+                    <label class="tallaM">M</label>
+                    <input type="checkbox" name="talla" value="L">
+                    <label class="tallaL">XL</label>
+                </div>
+            </form>
+            
+        </div>
+
+
+        <div class="Camisetas" id="C2">
+            <img src="Imagenes/c2.jpg" alt="C1">
+            <p id="Precio2">Precio : 20€</p>
+            <br>
+            <form>
+                <button class="botones">Añadir al carrito</button>
+                <div class="Talla">
+                    <input type="checkbox" name="talla" value="S">
+                    <label class="tallaS">S</label>
+                    <input type="checkbox" name="talla" value="M">
+                    <label class="tallaM">M</label>
+                    <input type="checkbox" name="talla" value="L">
+                    <label class="tallaL">XXL</label>
+                </div>
+            </form>
+        </div>
+        <div class="Camisetas" id="C3">
+            <img src="Imagenes/c3.jpg" alt="C1">
+            <p id="Precio3">Precio : 40€</p>
+            <br>
+            <form>
+                <button class="botones">Añadir al carrito</button>
+                <div class="Talla">
+                    <input type="checkbox" name="talla" value="S">
+                    <label class="tallaS">XS</label>
+                    <input type="checkbox" name="talla" value="M">
+                    <label class="tallaM">L</label>
+                    <input type="checkbox" name="talla" value="L">
+                    <label class="tallaL">XXL</label>
+                </div>
+            </form>
+            
+        </div>
+        <div class="Camisetas" id="C4">
+            <img src="Imagenes/c4.jpg" alt="C1">
+            <p id="Precio4">Precio : 32€</p>
+            
+            <br>
+            <form>
+                <button class="botones">Añadir al carrito</button>
+                <div class="Talla">
+                    <input type="checkbox" name="talla" value="S">
+                    <label class="tallaS">S</label>
+                    <input type="checkbox" name="talla" value="M">
+                    <label class="tallaM">M</label>
+                    <input type="checkbox" name="talla" value="L">
+                    <label class="tallaL">L</label>
+                </div>
+            </form>
+        </div>
+        <div class="Camisetas" id="C5">
+            <img src="Imagenes/c5.jpg" alt="C1">
+            <p id="Precio5">Precio : 28€</p>
+            
+            <br>
+            <form>
+                <button class="botones">Añadir al carrito</button>
+                <div class="Talla">
+                    <input type="checkbox" name="talla" value="S">
+                    <label class="tallaS">XS</label>
+                    <input type="checkbox" name="talla" value="M">
+                    <label class="tallaM">M</label>
+                    <input type="checkbox" name="talla" value="L">
+                    <label class="tallaL">XL</label>
+                </div>
+            </form>
+        </div>
+        <div class="Camisetas" id="C6">
+            <img src="Imagenes/c6.jpg" alt="C1">
+            <p id="Precio6">Precio : 22€</p>
+            
+            <br>
+            <form>
+                <button class="botones">Añadir al carrito</button>
+                <div class="Talla">
+                    <input type="checkbox" name="talla" value="S">
+                    <label class="tallaS">M</label>
+                    <input type="checkbox" name="talla" value="M">
+                    <label class="tallaM">L</label>
+                    <input type="checkbox" name="talla" value="L">
+                    <label class="tallaL">XL</label>
+                </div>
+            </form>
+        </div>
+        <div class="Camisetas" id="C7">
+            <img src="Imagenes/c7.jpg" alt="C1">
+            <p id="Precio7">Precio : 32€</p>
+            <br>
+            <form>
+                <button class="botones">Añadir al carrito</button>
+                <div class="Talla">
+                    <input type="checkbox" name="talla" value="S">
+                    <label class="tallaS">S</label>
+                    <input type="checkbox" name="talla" value="M">
+                    <label class="tallaM">M</label>
+                    <input type="checkbox" name="talla" value="L">
+                    <label class="tallaL">L</label>
+                </div>
+            </form>
+        </div>
+        <div class="Camisetas" id="C8">
+            <img src="Imagenes/c8.jpg" alt="C1">
+            <p id="Precio8">Precio : 18€</p>
+            <br>
+            <form>
+                <button class="botones">Añadir al carrito</button>
+                <div class="Talla">
+                    <input type="checkbox" name="talla" value="S">
+                    <label class="tallaS">S</label>
+                    <input type="checkbox" name="talla" value="M">
+                    <label class="tallaM">XL</label>
+                    <input type="checkbox" name="talla" value="L">
+                    <label class="tallaL">XXL</label>
+                </div>
+            </form>
+        </div>
+        <div class="Camisetas" id="C9">
+            <img src="Imagenes/c9.jpg" alt="C1">
+            <p id="Precio9">Precio : 28€</p>
+            
+            <br>
+            <form>
+                <button class="botones">Añadir al carrito</button>
+                <div class="Talla">
+                    <input type="checkbox" name="talla" value="S">
+                    <label class="tallaS">S</label>
+                    <input type="checkbox" name="talla" value="M">
+                    <label class="tallaM">M</label>
+                    <input type="checkbox" name="talla" value="L">
+                    <label class="tallaL">L</label>
+                </div>
+            </form>
+        </div>  
+        <video autoplay loop muted class="Video">
+            <source src="Imagenes/VideoBueno.mp4" type="video/mp4">
+            Tu navegador no es compatible con el formato del video
+        </video>
+      
+
+        <script src="javascript.js"></script>
+
+    </main>
+
+    <footer class="Final">
+        Carlos Marín Tutau
+        Programación de Aplicaciones Telemáticas
+        ICAI
+    </footer>
+    
+</body>
+</html>
